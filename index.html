@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>Pixel art</title>
+
+	<link rel="stylesheet" href="style/main.css">
+	<link rel="stylesheet" href="style/selectionCouleur.css">
+	
+	<script src="modules/error.js"></script>
+	<script src="modules/math.js"></script>
+	<script src="modules/draw.js"></script>
+	
+	<script src="src/interface/dimensionsCanvas.js"></script>
+	<script src="src/interface/dimensionsTilemap.js"></script>
+	<script src="src/interface/selectionCouleur.js"></script>
+	
+	<script src="src/Tilemap/PixelColors.js"></script>
+	<script src="src/Tilemap/TilemapPositionCalculator.js"></script>
+	<script src="src/Tilemap/TilemapDataHandler.js"></script>
+	<script src="src/Tilemap/TilemapPixelColorHandler.js"></script>
+	<script src="src/Tilemap/TilemapPixelDrawer.js"></script>
+	<script src="src/Tilemap/TilemapDrawer.js"></script>
+	<script src="src/Tilemap/Tilemap.js"></script>
+
+	<script src="src/initialisation.js"></script>
+</head>
+<body>
+	<canvas id="ecran" width="700" height="700">Le canvas ne s'est pas chargé, vérifiez la version de votre navigateur.</canvas>
+
+
+	<div id="settingsDiv">
+		<div id="settingsColor">
+			<button id="preselectionButtonBlue" class="selectionCouleurButton"><div class="apercuButtonCouleur" style="background-color: blue"></div></button>
+			<button id="preselectionButtonRed" class="selectionCouleurButton"><div class="apercuButtonCouleur" style="background-color: red"></div></button>
+			<button id="preselectionButtonGreen" class="selectionCouleurButton"><div class="apercuButtonCouleur" style="background-color: green"></div></button>
+			<button id="preselectionButtonYellow" class="selectionCouleurButton"><div class="apercuButtonCouleur" style="background-color: yellow"></div></button>
+			<button id="preselectionButtonBlack" class="selectionCouleurButton"><div class="apercuButtonCouleur" style="background-color: black"></div></button>
+			<button id="preselectionButtonWhite" class="selectionCouleurButton"><div class="apercuButtonCouleur" style="background-color: white"></div></button>
+		</div>
+		
+		<div id="settingsTilemapDimensionsDiv">
+			<input type="number" id="numberPixelLargeurInput" placeholder="nombre de pixels de largeur">
+			<input type="number" id="numberPixelHauteurInput" placeholder="nombre de pixels de hauteur">
+			
+			<button id="validerDimensionsTilemapButton">Valider</button>
+		</div>
+		
+		<div id="settingsCanvasDimensionsDiv">
+			<input type="number" id="largeurCanvasInput" placeholder="largeur">
+			<input type="number" id="hauteurCanvasInput" placeholder="hauteur">
+			
+			<button id="validerDimensionsCanvasButton">Valider</button>
+		</div>
+	</div>
+</body>
+</html>
