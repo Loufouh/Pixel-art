@@ -9,7 +9,14 @@
 	
 	<script src="modules/error.js"></script>
 	<script src="modules/math.js"></script>
-	<script src="modules/draw.js"></script>
+
+	<script src="modules/draw/coordinate.js"></script>
+	<script src="modules/draw/ColorType.js"></script>
+	<script src="modules/draw/Color.js"></script>
+	<script src="modules/draw/imageData.js"></script>
+	<script src="modules/draw/shapes.js"></script>
+	<script src="modules/draw/style.js"></script>
+	<script src="modules/draw/text.js"></script>
 	
 	<script src="src/interface/dimensionsCanvas.js"></script>
 	<script src="src/interface/dimensionsTilemap.js"></script>
@@ -23,11 +30,13 @@
 	<script src="src/Tilemap/TilemapDrawer.js"></script>
 	<script src="src/Tilemap/Tilemap.js"></script>
 
+	<script src="src/interface/outilDessin/Clear.js"></script>
+	<script src="src/interface/outilDessin/Fill.js"></script>
+
 	<script src="src/initialisation.js"></script>
 </head>
 <body>
 	<canvas id="ecran" width="700" height="700">Le canvas ne s'est pas chargé, vérifiez la version de votre navigateur.</canvas>
-
 
 	<div id="settingsDiv">
 		<div id="settingsColor">
@@ -51,6 +60,11 @@
 			<input type="number" id="hauteurCanvasInput" placeholder="hauteur">
 			
 			<button id="validerDimensionsCanvasButton">Valider</button>
+		</div>
+		
+		<div id="settingsCanvasDiv">
+			<button id="canvasClearButton">Tout effacer</button>
+			<button id="canvasFillButton">Remplir</button>
 		</div>
 	</div>
 </body>

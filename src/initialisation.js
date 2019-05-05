@@ -10,10 +10,12 @@ window.onload = function() {
 };
 
 // Louis et Maxence 
-function initialiserInterfaces(){
+function initialiserInterfaces() {
 	initialiserInterfaceDimensionsCanvas();
 	initialiserInterfaceDimensionsTilemap();
 	initialiserCouleurInterface();
+	initialiserCanvasClear();
+	initialiserCanvasFill();
 }
 
 // Louis

@@ -13,5 +13,6 @@ class TestTilemap {
 		new TestTilemapDrawPixel().test();
 		new TestTilemapClearPixel().test();
 		new TestTilemapGetPixelPositionByCanvas().test();
+		new TestTilemapAddColor().test();
 	}
 }

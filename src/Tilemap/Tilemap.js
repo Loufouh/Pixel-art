@@ -14,7 +14,7 @@ class Tilemap {
 	constructor(width=0, height=0) {
 		this.dataHandler = new TilemapDataHandler(width, height);
 		this.positionCalculator = new TilemapPositionCalculator(this);
-		this.pixelColorHandler = new TilemapPixelColorHandler();
+		this.pixelColorHandler = new TilemapPixelColorHandler(this);
 		this.pixelDrawer = new TilemapPixelDrawer(this);
 		this.drawer = new TilemapDrawer(this);
 	}
@@ -31,10 +31,18 @@ class Tilemap {
 		this.pixelDrawer.clearPixel(x, y);
 	}
 
+	addColor(color) {
+		this.pixelColorHandler.addColor(color);
+	}
+
 // ########## GETTERS AND SETTERS #############
 
-	getPixelColor(pixelColor) {
-		return this.pixelColorHandler.getPixelColor(pixelColor);
+	getPixelColor(pixelColorId) {
+		return this.pixelColorHandler.getPixelColor(pixelColorId);
+	}
+
+	getLastColorId() {
+		return this.pixelColorHandler.getLastColorId();
 	}
 
 	getIndex(x, y) {
