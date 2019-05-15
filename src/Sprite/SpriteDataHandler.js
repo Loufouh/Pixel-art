@@ -12,7 +12,7 @@
 
 'use strict';
 
-class TilemapDataHandler {
+class SpriteDataHandler {
 	constructor(width=0, height=0) {
 		this.width = width;
 		this.height = height;

@@ -19,19 +19,20 @@
 	<script src="modules/draw/text.js"></script>
 	
 	<script src="src/interface/dimensionsCanvas.js"></script>
-	<script src="src/interface/dimensionsTilemap.js"></script>
+	<script src="src/interface/dimensionsSprite.js"></script>
 	<script src="src/interface/selectionCouleur.js"></script>
 	
-	<script src="src/Tilemap/PixelColors.js"></script>
-	<script src="src/Tilemap/TilemapPositionCalculator.js"></script>
-	<script src="src/Tilemap/TilemapDataHandler.js"></script>
-	<script src="src/Tilemap/TilemapPixelColorHandler.js"></script>
-	<script src="src/Tilemap/TilemapPixelDrawer.js"></script>
-	<script src="src/Tilemap/TilemapDrawer.js"></script>
-	<script src="src/Tilemap/Tilemap.js"></script>
+	<script src="src/Sprite/PixelColors.js"></script>
+	<script src="src/Sprite/SpritePositionCalculator.js"></script>
+	<script src="src/Sprite/SpriteDataHandler.js"></script>
+	<script src="src/Sprite/SpritePixelColorHandler.js"></script>
+	<script src="src/Sprite/SpritePixelDrawer.js"></script>
+	<script src="src/Sprite/SpriteDrawer.js"></script>
+	<script src="src/Sprite/Sprite.js"></script>
 
-	<script src="src/interface/outilDessin/Clear.js"></script>
-	<script src="src/interface/outilDessin/Fill.js"></script>
+	<script src="src/interface/outilDessin/clear.js"></script>
+	<script src="src/interface/outilDessin/fill.js"></script>
+	<script src="src/interface/outilDessin/colorCustomize.js"></script>
 
 	<script src="src/initialisation.js"></script>
 </head>
@@ -48,11 +49,15 @@
 			<button id="preselectionButtonWhite" class="selectionCouleurButton"><div class="apercuButtonCouleur" style="background-color: white"></div></button>
 		</div>
 		
-		<div id="settingsTilemapDimensionsDiv">
+		<div id="settingsCouleurPersonnalisee">
+			<input type="color" id="inputCouleurPersonnalisee" class="selectionCouleurButton">
+		</div>
+		
+		<div id="settingsSpriteDimensionsDiv">
 			<input type="number" id="numberPixelLargeurInput" placeholder="nombre de pixels de largeur">
 			<input type="number" id="numberPixelHauteurInput" placeholder="nombre de pixels de hauteur">
 			
-			<button id="validerDimensionsTilemapButton">Valider</button>
+			<button id="validerDimensionsSpriteButton">Valider</button>
 		</div>
 		
 		<div id="settingsCanvasDimensionsDiv">
@@ -66,6 +71,7 @@
 			<button id="canvasClearButton">Tout effacer</button>
 			<button id="canvasFillButton">Remplir</button>
 		</div>
+		
 	</div>
 </body>
 </html>

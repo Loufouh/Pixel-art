@@ -12,17 +12,17 @@
 
 'use strict';
 
-class TilemapPixelDrawer {
-	constructor(tilemap) {
-		this.tilemap = tilemap;
+class SpritePixelDrawer {
+	constructor(sprite) {
+		this.sprite = sprite;
 	}
 
 	drawPixel(x, y) {
-		this.tilemap.setPixel(this.tilemap.getDrawingColor(), this.tilemap.getIndex(x, y));
+		this.sprite.setPixel(this.sprite.getDrawingColor(), this.sprite.getIndex(x, y));
 	}
 
 	clearPixel(x, y) {
-		this.tilemap.setPixel(this.tilemap.getCleaningColor(), this.tilemap.getIndex(x, y))
+		this.sprite.setPixel(this.sprite.getCleaningColor(), this.sprite.getIndex(x, y))
 	}
 }
 

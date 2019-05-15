@@ -22,21 +22,21 @@ function initialiserCouleurInterface(){
 
 function changeDrawingColor(evt){	
 	if(this.id === "preselectionButtonRed"){
-		tilemap.setDrawingColor(PixelColors.RED);
+		sprite.setDrawingColor(PixelColors.RED);
 	}
 	else if(this.id === "preselectionButtonGreen"){
-		tilemap.setDrawingColor(PixelColors.GREEN);
+		sprite.setDrawingColor(PixelColors.GREEN);
 	}
 	else if(this.id === "preselectionButtonBlue"){
-		tilemap.setDrawingColor(PixelColors.BLUE);
+		sprite.setDrawingColor(PixelColors.BLUE);
 	}
 	else if(this.id === "preselectionButtonYellow"){
-		tilemap.setDrawingColor(PixelColors.YELLOW);
+		sprite.setDrawingColor(PixelColors.YELLOW);
 	}
 	else if(this.id === "preselectionButtonBlack"){
-		tilemap.setDrawingColor(PixelColors.BLACK);
+		sprite.setDrawingColor(PixelColors.BLACK);
 	}
 	else if(this.id === "preselectionButtonWhite"){
-		tilemap.setDrawingColor(PixelColors.WHITE);
+		sprite.setDrawingColor(PixelColors.WHITE);
 	}
 }

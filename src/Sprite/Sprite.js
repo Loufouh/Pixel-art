@@ -10,13 +10,13 @@
  *
 */
 
-class Tilemap {
+class Sprite {
 	constructor(width=0, height=0) {
-		this.dataHandler = new TilemapDataHandler(width, height);
-		this.positionCalculator = new TilemapPositionCalculator(this);
-		this.pixelColorHandler = new TilemapPixelColorHandler(this);
-		this.pixelDrawer = new TilemapPixelDrawer(this);
-		this.drawer = new TilemapDrawer(this);
+		this.dataHandler = new SpriteDataHandler(width, height);
+		this.positionCalculator = new SpritePositionCalculator(this);
+		this.pixelColorHandler = new SpritePixelColorHandler(this);
+		this.pixelDrawer = new SpritePixelDrawer(this);
+		this.drawer = new SpriteDrawer(this);
 	}
 	
 	draw() {

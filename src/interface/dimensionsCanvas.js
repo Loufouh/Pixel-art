@@ -17,5 +17,5 @@ function validerDimensionsCanvas() {
 	canvas.height = hauteurCanvasInput.value;
 
 	background(new Color(0));
-	tilemap.draw();
+	sprite.draw();
 }

@@ -11,8 +11,8 @@
 
 'use strict';
 
-class TilemapPixelColorHandler {
-	constructor(tilemap) {
+class SpritePixelColorHandler {
+	constructor(sprite) {
 		this.drawingColor = PixelColors.BLACK;
 		this.cleaningColor = PixelColors.WHITE;
 
