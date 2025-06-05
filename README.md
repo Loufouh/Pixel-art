@@ -1,5 +1,5 @@
 # Pixel-art
 This project has been created for a computer science exam in high-school ([see Baccalauréat](https://en.wikipedia.org/wiki/Baccalauréat)).
-I included the document ["./Compte\_rendu.pdf"](https://github.com/Louis-Masson/Pixel-art/blob/master/Compte_rendu.pdf) explaining the project (it's in french though).
+I included the document ["./Compte\_rendu.pdf"](https://github.com/Loufouh/Pixel-art/blob/master/Compte_rendu.pdf) explaining the project (it's in french though).
 
-You can test the final project right here: [Pixel-art](https://louis-masson.github.io/Pixel-art/)
+You can test the final project right here: [Pixel-art](https://loufouh.github.io/Pixel-art/)
